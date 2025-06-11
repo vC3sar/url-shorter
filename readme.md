@@ -237,7 +237,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
    Luego, habilita la configuración con:
 
    ```bash
-   sudo ln -s /etc/nginx/sites-available/008-linkatze.conf /etc/nginx/sites-enabled/
+   sudo ln -s /etc/nginx/sites-available/008-shortlink.conf /etc/nginx/sites-enabled/
    sudo nginx -t
    sudo systemctl restart nginx
    ```
