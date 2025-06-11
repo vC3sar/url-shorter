@@ -1,0 +1,11 @@
+services:
+    snapp:
+        image: uraniadev/snapp:latest
+        ports:
+        - 8893:3000
+        environment:
+        ORIGIN: link.katzellc.com
+        PUBLIC_URL: http://link.katzellc.com
+        DATABASE_PROVIDER: sqlite
+        DATABASE_URL: file:./db.sqlite
+        TOKEN_SECRET: nZ5a/fKI/b7mgvSIjXDzO3Zp6EwnUYOozB/r8KnAc6I= # openssl rand --base64 32

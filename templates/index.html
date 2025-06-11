@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4361ee;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #3f37c9;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .result a {
+            text-decoration: none;
+            color: #4361ee;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Acortador de URL</h1>
+        <form action="/shorten" method="POST">
+            <input type="text" name="url" placeholder="Ingresa la URL a acortar" required>
+            <button type="submit">Acortar URL</button>
+        </form>
+        {% if original_url %}
+            <div class="result">
+                <p>URL original: <a href="{{ original_url }}" target="_blank">{{ original_url }}</a></p>
+                <p>URL corta: <a href="{{ short_url }}" target="_blank">{{ short_url }}</a></p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Shortener</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Link Shortener</h1>
+    <form id="shortenForm">
+      <input type="url" id="originalUrl" placeholder="Ingresa tu URL" required>
+      <button type="submit">Acortar</button>
+    </form>
+
+    <!--div id="result" style="display:none;">
+      <p><strong>URL Acortada:</strong> <span id="shortUrl"></span></p>
+    </div !-->
+    <div id="result" style="display:none;">
+  <p><strong>URL Acortada:</strong> <span id="shortUrl"></span></p>
+  <button id="copyButton">Copiar enlace</button>
+</div>
+
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
+
