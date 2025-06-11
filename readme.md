@@ -99,8 +99,11 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
 ## Uso
 
 Una vez que el servidor esté funcionando, puedes realizar las siguientes acciones:
+### Ve al sitio web en linea
+**Web**: `https://tu.dominio.com`
+Si no usas nginx la conexión sera por http
 
-### Acortar una URL
+### Acortar una URL con API (metodo 2)
 
 Envía una solicitud **POST** a la siguiente ruta para acortar una URL:
 
