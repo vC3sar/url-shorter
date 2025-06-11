@@ -18,7 +18,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
 1. **Clona el repositorio o descarga los archivos del proyecto**:
 
    ```bash
-   git clone <url_del_repositorio>
+   git clone https://github.com/vC3sar/url-shorter.git
    cd link-shortener
    ```
 
